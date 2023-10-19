@@ -13,7 +13,8 @@ export const sendToken = (res, user, message, statusCode = 200) => {
         secure: process.env.NODE_ENV === 'Development' ? false : true
     }).json({
         success: true,
-        message
+        message,
+        token
     });
 
 } 
